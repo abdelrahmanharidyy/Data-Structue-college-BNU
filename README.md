@@ -191,7 +191,7 @@ public:
 };
 
 
-class stack {
+class stack{
 	int top;
 	int* items;
 	int size;
@@ -291,7 +291,7 @@ public:
 };
 
 
-class circular_queue {
+class circular_queue{
 	int front, rear;
 	int* items;
 	int size;
@@ -357,7 +357,7 @@ public:
 };
 
 
-class deque {
+class deque{
 	int front, rear;
 	int size;
 	int* items;
@@ -463,7 +463,7 @@ public:
 //Data Structure using Linked List:
 //LL for linked list...
 
-class LL_stack {
+class LL_stack{
 	linked_list STACK;
 public:
 	void push(int value) {
@@ -479,7 +479,7 @@ public:
 };
 
 
-class LL_queue {
+class LL_queue{
 	linked_list QUEUE;
 public:
 	void push(int value) {
@@ -495,7 +495,7 @@ public:
 };
 
 
-class LL_deque {
+class LL_deque{
 	linked_list DEQUE;
 public:
 	void push_back(int value) {
