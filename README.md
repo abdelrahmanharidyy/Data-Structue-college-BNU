@@ -191,7 +191,7 @@ public:
 };
 
 
-class stack{
+class stack {
 	int top;
 	int* items;
 	int size;
@@ -291,7 +291,7 @@ public:
 };
 
 
-class circular_queue{
+class circular_queue {
 	int front, rear;
 	int* items;
 	int size;
@@ -357,7 +357,7 @@ public:
 };
 
 
-class deque{
+class deque {
 	int front, rear;
 	int size;
 	int* items;
@@ -463,7 +463,7 @@ public:
 //Data Structure using Linked List:
 //LL for linked list...
 
-class LL_stack{
+class LL_stack {
 	linked_list STACK;
 public:
 	void push(int value) {
@@ -479,7 +479,7 @@ public:
 };
 
 
-class LL_queue{
+class LL_queue {
 	linked_list QUEUE;
 public:
 	void push(int value) {
@@ -495,7 +495,7 @@ public:
 };
 
 
-class LL_deque{
+class LL_deque {
 	linked_list DEQUE;
 public:
 	void push_back(int value) {
@@ -535,6 +535,23 @@ int factorial(int n) {
 	if (n == 0 || n == 1)return 1;
 	return n * factorial(n - 1);
 }
+
+int gcd(int x, int y)
+{
+	if (x% y == 0)  return y; 
+
+	else  return gcd(y, x % y);
+}
+
+ int fib(int n){
+	if (n <= 0)
+		return 0;
+	else if (n == 1 || n == 2)
+		return 1;
+	else
+		return (fib(n-1) + fib(n-2));
+ }
+
 int Power(int n, int p) {
 	if (p == 0)return 1;
 	return n * Power(n, p - 1);
